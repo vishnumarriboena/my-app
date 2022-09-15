@@ -1,0 +1,30 @@
+<form [formGroup]="vehicleForm">
+
+    <label>vehicle</label>
+    <input type="text" formControlName="Vehicle">
+    <br>
+
+    <label>manufacture</label>
+    <input type="text" formControlName="manufacturer">
+    <br>
+
+    <label>model</label>
+    <input type="text" formControlName="model">
+    <br>
+
+    <label>type</label>
+    <input type="text" formControlName="type">
+    <br>
+
+    <label>fuel</label>
+    <input type="text" formControlName="fuel">
+    <br>
+
+    <label>color</label>
+    <input type="text" formControlName="color">
+    <br>
+
+    <button (click)="submit()">submit</button>
+
+
+</form>

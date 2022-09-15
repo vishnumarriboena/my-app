@@ -1,0 +1,9 @@
+<div class="product"*ngFor="let item of items">
+    <p>{{item .title}}</p>
+     <p>{{item .price}}</p>
+     <p>{{item .category}}</p>
+     <p><img src="{{item.image}}"[width]="80"[height]="90"></p>
+     <p>{{item .rating .rate}}</p>
+     <p>{{item .id}}</p>
+     
+     

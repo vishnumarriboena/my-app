@@ -1,0 +1,46 @@
+<h1>Employees works!</h1>
+
+<label>name:</label>
+<input type="text"[(ngModel)]="name">
+<br>
+<br>
+<label>Age:</label>
+<input type="text"[(ngModel)]="Age">
+<br>
+<br>
+<label>Company</label>
+<input type="text"[(ngModel)]="company">
+<br>
+<br>
+<label>Package</label>
+<input type="text"[(ngModel)]="package">
+<br>
+<br>
+<button class="btn btn-primary"(click)="register()">Register</button>
+<br><br>
+<button (click)="packagelowToHigh()">packagelowToHigh</button>
+<button (click)="packageHighTolow()">packageHighTolow</button>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>company</th>
+            <th>package</th>
+        </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor="let employee of employees;let i=index">
+            <td>{{ employee.name }}</td>
+            <td>{{employee.age |age}}</td>
+            <td>{{employee.company}}</td>
+            <td>{{employee.package | package}}</td>
+            
+            <td><button (click)="delete(i)">delete</button></td>
+    </tr>   
+ </tbody>
+</table>
+
+
+
+

@@ -1,0 +1,22 @@
+
+<table class="table table-bordered">
+    <tbody>
+        <tr class="row">
+            <div class="grid-container col-sm-4" *ngFor="let admin of admins">
+                <p>id:{{admin.id}}</p>
+                <p>name:{{admin.name}}</p>
+                <p>username:{{admin .username}}</p>  
+                <p>email:{{admin.email}}</p>
+                <p>address:<br>
+                    geo:<br>lat:{{admin.address.geo.lat}}</p>
+                <p>phone:{{admin.phone}}</p>
+                <p>website:{{admin.website}}</p>
+                <div>company:
+                    <p>name:{{admin.company.name}}<br>
+                    bs:{{admin.company.bs}}</p>
+                </div>
+            </div>
+        </tr>
+    </tbody>
+    
+</table>

@@ -1,0 +1,29 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.child1{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: royalblue;
+    border-radius: 5px;
+    text-align: center;
+    overflow: auto;
+
+}
+.child2{
+    width: 80%;
+    height: 100%;
+    background-color: wheat;
+    overflow:scroll;
+
+    
+}
+.login{
+    padding: 10px;
+    color: blue;
+
+}

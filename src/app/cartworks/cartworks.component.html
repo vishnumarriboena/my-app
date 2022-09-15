@@ -1,0 +1,40 @@
+<h1>cartworks works!</h1>
+
+
+<label>name:</label>
+<input type="text"[(ngModel)]="name">
+<br>
+
+<label>price</label>
+<input type="text"[(ngModel)]="price">
+<br>
+
+<label>quantity</label>
+<input type="text"[(ngModel)]="quantity">
+<br>
+<button class="btn btn -primary"(click)="add()">ad to cart</button>
+
+<br><br><br>
+<button (click)="pricelowToHigh()">pricelowToHigh</button>
+<button (click)="priceHighTolow()">priceHighTolow</button>
+<table class="table table-hover">
+  
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>price{{totalAmount}}</th>
+            <th>quantity</th>
+            <th>Actions
+                <button (click)="clear()">clear cart</button>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products;let i=index">
+            <td>{{product.name |uppercase}}</td>
+            <td>{{product.price | price}}</td>
+            <td>{{product.quantity}}</td>
+            <td><button (click)="delete(i)">delete</button></td>
+        </tr>
+    </tbody>
+</table>   
